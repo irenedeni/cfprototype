@@ -39,7 +39,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
     }
   );
 
-
   const postList = await response.json()
   return {
     paths: Array.from(postList).map((post) => {

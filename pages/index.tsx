@@ -41,7 +41,6 @@ export default function Home() {
   const isLoadingMore = isLoadingInitialData || (size > 0 && data && typeof data[size - 1] === "undefined");
   const isEmpty = data?.[0]?.length === 0;
   const isReachingEnd = isEmpty || (data && data[data.length - 1]?.length < PAGE_SIZE);
-  
   return (
     <Layout>
       <Head><title>Next JS/TNW</title></Head>
